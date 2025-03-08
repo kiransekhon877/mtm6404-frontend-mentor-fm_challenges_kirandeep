@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="desserts">
+            <h2>Desserts</h2>
+            <div class="dessert-list">
+                <div class="dessert-item" data-name="Waffle with Berries" data-price="6.50">
+                    <img src="images/waffle.jpg" alt="Waffle with Berries">
+                    <p>Waffle with Berries - $6.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="dessert-item" data-name="Vanilla Bean Crème Brûlée" data-price="7.00">
+                    <img src="images/creme-brulee.jpg" alt="Vanilla Bean Crème Brûlée">
+                    <p>Vanilla Bean Crème Brûlée - $7.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="dessert-item" data-name="Macaron Mix of Five" data-price="8.00">
+                    <img src="images/macaron.jpg" alt="Macaron Mix">
+                    <p>Macaron Mix of Five - $8.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Add more items as needed -->
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <div class="cart-items"></div>
+            <p class="order-total">Total: $<span id="total-price">0.00</span></p>
+            <button id="confirm-order">Confirm Order</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
